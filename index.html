@@ -112,17 +112,6 @@
     Domains</a>
 </header>
 
-<!-- Меню с улучшенным стилем в стиле Apple -->
-<nav class="absolute top-0 left-0 w-full bg-black text-white shadow-lg z-20">
-  <div class="container mx-auto flex justify-center py-4">
-    <a href="#featured" class="px-6 py-2 rounded-lg hover:bg-gray-800 hover:transition-all hover:duration-300 hover:ease-in-out">Featured</a>
-    <a href="#crypto" class="px-6 py-2 rounded-lg hover:bg-gray-800 hover:transition-all hover:duration-300 hover:ease-in-out">Cryptocurrencies</a>
-    <a href="#ai-tech" class="px-6 py-2 rounded-lg hover:bg-gray-800 hover:transition-all hover:duration-300 hover:ease-in-out">AI/Tech</a>
-    <a href="#security-trust" class="px-6 py-2 rounded-lg hover:bg-gray-800 hover:transition-all hover:duration-300 hover:ease-in-out">Security & Trust</a>
-    <a href="#casino-esports" class="px-6 py-2 rounded-lg hover:bg-gray-800 hover:transition-all hover:duration-300 hover:ease-in-out">Casino & Esports</a>
-  </div>
-</nav>
-
 <!-- Featured Domains -->
 <section id="featured" class="px-6 py-16">
   <h2 class="text-3xl font-bold text-center mb-12">Featured Domains</h2>
@@ -309,7 +298,7 @@
   </div>
 </section>
 
-<!-- Модальное окно -->
+<!-- Modal -->
 <div id="buyModal"
      class="fixed inset-0 flex justify-center items-center bg-black bg-opacity-50 backdrop-blur-sm hidden">
   <div class="modal-content">
@@ -323,7 +312,6 @@
       <a href="https://wa.me/40765263983" target="_blank"
          class="bg-green-500 text-white px-4 py-2 rounded-lg w-full text-center">WhatsApp</a>
 
-      <!-- Кнопка Namecheap ниже Telegram и WhatsApp и выровнена по центру -->
       <a href="#" id="namecheapLink"
          class="bg-yellow-500 text-white px-4 py-2 rounded-lg w-full text-center hover:bg-yellow-400 transition-colors"
          onclick="openNamecheapLink()">Go to Namecheap</a>
@@ -337,26 +325,22 @@
 
 <script>
   function openPopup(domain) {
-    // Открыть попап
     document.getElementById("buyModal").classList.remove("hidden");
 
-    // Подставить домен в попап
     document.getElementById("selectedDomain").textContent = domain;
 
-    // Подставить домен в ссылку на Namecheap
     const namecheapLink = document.getElementById("namecheapLink");
     namecheapLink.href = `https://www.namecheap.com/domains/registration/results/?domain=${domain}`;
   }
 
   function closePopup() {
-    // Закрыть попап
     document.getElementById("buyModal").classList.add("hidden");
-    document.getElementById("selectedDomain").textContent = ""; // Очистить домен в попапе
+    document.getElementById("selectedDomain").textContent = "";
   }
 
   function openNamecheapLink() {
     const namecheapLink = document.getElementById("namecheapLink");
-    window.open(namecheapLink.href, "_blank"); // Это откроет ссылку в новой вкладке
+    window.open(namecheapLink.href, "_blank");
   }
 </script>
 
@@ -365,9 +349,9 @@
     width: 20rem;
     padding: 2rem;
     border-radius: 1rem;
-    background: rgba(24, 24, 27, 0.75); /* ← это делает полупрозрачный фон */
-    backdrop-filter: blur(20px); /* ← это эффект матового стекла */
-    -webkit-backdrop-filter: blur(20px); /* Safari поддержка */
+    background: rgba(24, 24, 27, 0.75);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
     border: 1px solid rgba(100, 100, 100, 0.3);
   }
