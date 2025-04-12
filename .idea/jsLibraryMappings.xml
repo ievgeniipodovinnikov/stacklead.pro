@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="JavaScriptLibraryMappings">
-    <file url="PROJECT" libraries="{slick-carousel, tailwindcss}" />
+    <file url="PROJECT" libraries="{050cc1a4523c3, slick-carousel, tailwindcss}" />
   </component>
 </project>

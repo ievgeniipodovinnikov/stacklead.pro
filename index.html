@@ -103,14 +103,23 @@
   </script>
 </head>
 
-<body class="text-white">
-<!-- Header -->
-<header class="text-center py-20 px-4">
+<header class="text-center py-20 px-4 relative z-10">
   <h1 class="text-5xl font-bold mb-4 text-white">Stacklead</h1>
   <p class="text-xl text-gray-400 mb-8">Premium Domains for Future-Driven Ventures</p>
   <a href="#featured" class="bg-white text-black px-6 py-3 rounded-xl font-semibold hover:bg-gray-200 transition">Browse
     Domains</a>
 </header>
+
+<!-- Меню с улучшенным стилем в стиле Apple -->
+<nav class="absolute top-0 left-0 w-full bg-black text-white shadow-lg z-20">
+  <div class="container mx-auto flex justify-center py-4">
+    <a href="#featured" class="px-6 py-2 rounded-lg hover:bg-gray-800 hover:transition-all hover:duration-300 hover:ease-in-out">Featured</a>
+    <a href="#crypto" class="px-6 py-2 rounded-lg hover:bg-gray-800 hover:transition-all hover:duration-300 hover:ease-in-out">Cryptocurrencies</a>
+    <a href="#ai-tech" class="px-6 py-2 rounded-lg hover:bg-gray-800 hover:transition-all hover:duration-300 hover:ease-in-out">AI/Tech</a>
+    <a href="#security-trust" class="px-6 py-2 rounded-lg hover:bg-gray-800 hover:transition-all hover:duration-300 hover:ease-in-out">Security & Trust</a>
+    <a href="#casino-esports" class="px-6 py-2 rounded-lg hover:bg-gray-800 hover:transition-all hover:duration-300 hover:ease-in-out">Casino & Esports</a>
+  </div>
+</nav>
 
 <!-- Featured Domains -->
 <section id="featured" class="px-6 py-16">
@@ -170,7 +179,7 @@
   </div>
 
   <!-- AI/Tech Section -->
-  <h3 class="text-2xl font-semibold text-center mb-6 mt-12">AI/Tech</h3>
+  <h3 id="ai-tech" class="text-2xl font-semibold text-center mb-6 scroll-mt-12 mt-12">AI/Tech</h3>
   <div class="flex justify-center gap-8 max-w-6xl mx-auto flex-wrap">
 
     <!-- Card 3: viralmind.xyz -->
@@ -207,7 +216,7 @@
   </div>
 
   <!-- Security & Trust Section -->
-  <h3 class="text-2xl font-semibold text-center mb-6 mt-12">Security & Trust</h3>
+  <h3 id="security-trust" class="text-2xl font-semibold text-center mb-6 mt-12">Security & Trust</h3>
   <div class="flex justify-center gap-8 max-w-6xl mx-auto flex-wrap">
 
     <!-- Card 5: leaktrade.xyz -->
@@ -259,7 +268,7 @@
   </div>
 
   <!-- Casino & Esports -->
-  <h3 class="text-2xl font-semibold text-center mb-6 mt-12">Casino & Esports</h3>
+  <h3 id="casino-esports" class="text-2xl font-semibold text-center mb-6 mt-12">Casino & Esports</h3>
   <div class="flex justify-center gap-8 max-w-6xl mx-auto flex-wrap">
 
     <!-- Card 1: esportsmania.xyz -->
