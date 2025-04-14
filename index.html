@@ -21,12 +21,6 @@
   <meta name="twitter:image" content="https://stacklead.pro/icon.png">
   <meta name="twitter:creator" content="@stackleadpro">
   <title>Stacklead - Premium Domains for AI, Crypto & More</title>
-  <script>
-    const hostname = window.location.hostname;
-    if (hostname !== "stacklead.pro") {
-      window.location.href = "/index2.html";
-    }
-  </script>
   <script type="text/javascript" data-cmp-ab="1"
           src="https://cdn.consentmanager.net/delivery/autoblocking/050cc1a4523c3.js"
           data-cmp-host="a.delivery.consentmanager.net" data-cmp-cdn="cdn.consentmanager.net"
@@ -111,7 +105,7 @@
   </script>
 </head>
 
-<header class="text-center py-20 px-4 relative z-10">
+<header class="text-center py-20 px-4 relative">
   <h1 class="text-5xl font-bold mb-4 text-white">Stacklead</h1>
   <p class="text-xl text-gray-400 mb-8">Premium Domains for Future-Driven Ventures</p>
   <a href="#featured" class="bg-white text-black px-6 py-3 rounded-xl font-semibold hover:bg-gray-200 transition">Browse
@@ -120,10 +114,10 @@
 
 <!-- Featured Domains -->
 <section id="featured" class="px-6 py-16">
-  <h2 class="text-3xl font-bold text-center mb-12">Featured Domains</h2>
+  <h2 class="text-3xl text-white font-bold text-center mb-12">Featured Domains</h2>
 
   <!-- Cryptocurrencies Section -->
-  <h3 id="crypto" class="text-2xl font-semibold text-center mb-6">Cryptocurrencies</h3>
+  <h3 id="crypto" class="text-2xl text-white font-semibold text-center mb-6">Cryptocurrencies</h3>
   <div class="flex justify-center gap-8 max-w-6xl mx-auto flex-wrap">
 
     <!-- Card 1: algoshark.pro -->
@@ -206,7 +200,7 @@
   </div>
 
   <!-- AI/Tech Section -->
-  <h3 id="ai-tech" class="text-2xl font-semibold text-center mb-6 scroll-mt-12 mt-12">AI/Tech</h3>
+  <h3 id="ai-tech" class="text-2xl text-white font-semibold text-center mb-6 scroll-mt-12 mt-12">AI/Tech</h3>
   <div class="flex justify-center gap-8 max-w-6xl mx-auto flex-wrap">
 
     <!-- Card 3: viralmind.xyz -->
@@ -243,7 +237,7 @@
   </div>
 
   <!-- Sustainability Section -->
-  <h3 id="green" class="text-2xl font-semibold text-center mb-6 scroll-mt-12 mt-12">Sustainability & Innovation</h3>
+  <h3 id="green" class="text-2xl text-white font-semibold text-center mb-6 scroll-mt-12 mt-12">Sustainability & Innovation</h3>
   <div class="flex justify-center gap-8 max-w-6xl mx-auto flex-wrap">
 
     <!-- Card: greenovate.pro -->
@@ -265,7 +259,7 @@
   </div>
 
   <!-- Security & Trust Section -->
-  <h3 id="security-trust" class="text-2xl font-semibold text-center mb-6 mt-12">Security & Trust</h3>
+  <h3 id="security-trust" class="text-2xl text-white font-semibold text-center mb-6 mt-12">Security & Trust</h3>
   <div class="flex justify-center gap-8 max-w-6xl mx-auto flex-wrap">
 
     <!-- Card 5: leaktrade.xyz -->
@@ -317,7 +311,7 @@
   </div>
 
   <!-- Casino & Esports -->
-  <h3 id="casino-esports" class="text-2xl font-semibold text-center mb-6 mt-12">Casino & Esports</h3>
+  <h3 id="casino-esports" class="text-2xl text-white font-semibold text-center mb-6 mt-12">Casino & Esports</h3>
   <div class="flex justify-center gap-8 max-w-6xl mx-auto flex-wrap">
 
     <!-- Card 1: esportsmania.xyz -->
@@ -351,8 +345,9 @@
 </section>
 
 <!-- Modal -->
+
 <div id="buyModal"
-     class="fixed inset-0 flex justify-center items-center bg-black bg-opacity-50 backdrop-blur-sm hidden">
+     class="fixed inset-0 z-[9999] flex justify-center items-center bg-black bg-opacity-50 backdrop-blur-sm hidden">
   <div class="modal-content">
     <h3 class="text-2xl font-semibold text-white mb-4 text-center">
       Contact to buy <span id="selectedDomain" class="text-blue-600 font-mono"></span>
